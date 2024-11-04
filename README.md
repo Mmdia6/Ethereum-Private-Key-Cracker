@@ -1,13 +1,26 @@
 # Cracking Ethereum wallets (using private key)
 
-### Linux
+### Installation
+apt update and install required apts
 ```
 sudo apt update
 sudo apt install pip git -y
+```
+
+Download
+```
 git clone https://github.com/Mmdia6/Ethereum-Private-Key-Cracker
 cd Ethereum-Private-Key-Cracker
 pip install -r requirements.txt
+```
+
+Run
+```
 python3 main.py
+```
+For Termux
+```
+python main.py
 ```
 
 Put the addresses of the wallets you want to crack in the `targets.txt` file
