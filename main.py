@@ -11,6 +11,7 @@ print(f"Importing targets from {filename}...")
 with open(filename) as f:
     target_address = f.read().split()
     f.close()
+target_address = set(target_address)
 
 print(f"Target count: {len(target_address):,}")
 print()
@@ -21,9 +22,9 @@ while True:
     private_key = urandom(32).hex()
     hdwallet = HDWallet(symbol='ETH')
     hdwallet.from_private_key(private_key=private_key)
-    address = hdwallet.p2pkh_address()
+    address = hdwallet.p2pkh_address().lower()
 
-    print(f"Total attempts: {count:,} - Address: {address}", end="\r")
+    print(f"Total attempts: {count:,} - Total cracked: {success:,} - Address: {address[:7]}...", end="\r")
 
     if address in target_address:
         success += 1
