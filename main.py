@@ -22,7 +22,7 @@ while True:
     private_key = urandom(32).hex()
     hdwallet = HDWallet(symbol='ETH')
     hdwallet.from_private_key(private_key=private_key)
-    address = hdwallet.p2pkh_address().lower()
+    address = hdwallet.p2pkh_address()
 
     print(f"Total attempts: {count:,} - Total cracked: {success:,} - Address: {address[:7]}...", end="\r")
 
