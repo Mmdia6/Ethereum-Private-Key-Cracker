@@ -9,8 +9,8 @@ sudo apt install pip git -y
 
 Download
 ```
-git clone https://github.com/Mmdia6/Ethereum-Private-Key-Cracker
-cd Ethereum-Private-Key-Cracker
+git clone https://github.com/Mmdia6/Ethereum-Private-Key-Recover
+cd Ethereum-Private-Key-Recover
 pip install -r requirements.txt
 ```
 
