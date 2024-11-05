@@ -1,4 +1,4 @@
-# Cracking Ethereum wallets (using private key)
+# Recovering Ethereum wallets (using private key)
 
 ### Installation
 apt update and install required apts
